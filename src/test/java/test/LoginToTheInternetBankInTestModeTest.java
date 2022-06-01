@@ -62,8 +62,6 @@ public class LoginToTheInternetBankInTestModeTest {
                 .shouldHave(Condition.text("Неверно указан логин или пароль"));
     }
 
-    //60 + 22 минут + 15 +
-
     @Test
     void shouldFailedAuthIfPasswordIsWrong() {
         var registeredUser = UserRegistrationService.registerUser("ru", UserStatus.active);
